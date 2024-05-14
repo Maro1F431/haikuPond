@@ -152,3 +152,10 @@ document.querySelector('.right-arrow').addEventListener('click', function() {
     haikuIndex = mod((haikuIndex + 1), haikuListLength);
     loadHaiku();
 });
+
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    toggleButton.classList.toggle('active');
+});
